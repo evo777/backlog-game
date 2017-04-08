@@ -40874,7 +40874,7 @@
 
 	var _Auth2 = _interopRequireDefault(_Auth);
 
-	var _GameBoard = __webpack_require__(457);
+	var _GameBoard = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../components/GameBoard.jsx\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
 	var _GameBoard2 = _interopRequireDefault(_GameBoard);
 
@@ -40950,80 +40950,7 @@
 	exports.default = DashboardPage;
 
 /***/ },
-/* 457 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var GameBoard = function (_React$Component) {
-	  _inherits(GameBoard, _React$Component);
-
-	  function GameBoard() {
-	    _classCallCheck(this, GameBoard);
-
-	    return _possibleConstructorReturn(this, (GameBoard.__proto__ || Object.getPrototypeOf(GameBoard)).apply(this, arguments));
-	  }
-
-	  _createClass(GameBoard, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "search-form" },
-	        _react2.default.createElement(
-	          "form",
-	          null,
-	          _react2.default.createElement(
-	            "label",
-	            null,
-	            "Game"
-	          ),
-	          _react2.default.createElement("input", { placeholder: "Type game name" }),
-	          _react2.default.createElement(
-	            "button",
-	            { className: "btn btn-primary" },
-	            "Submit Game"
-	          ),
-	          _react2.default.createElement(
-	            "label",
-	            null,
-	            "Time Played"
-	          ),
-	          _react2.default.createElement("input", { placeholder: "Typed estimated time" }),
-	          _react2.default.createElement(
-	            "button",
-	            { className: "btn btn-primary" },
-	            "Submit Game"
-	          )
-	        )
-	      );
-	    }
-	  }]);
-
-	  return GameBoard;
-	}(_react2.default.Component);
-
-	exports.default = GameBoard;
-
-/***/ },
+/* 457 */,
 /* 458 */
 /***/ function(module, exports, __webpack_require__) {
 

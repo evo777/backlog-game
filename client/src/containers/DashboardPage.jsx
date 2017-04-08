@@ -1,7 +1,7 @@
 import React from 'react';
 import Auth from '../modules/Auth';
 //import Dashboard from '../components/Dashboard.jsx';
-import GameBoard from '../components/GameBoard.js';
+import GameBoard from '../components/GameBoard.jsx';
 
 
 class DashboardPage extends React.Component {
