@@ -1,19 +1,14 @@
 import React from 'react';
 import Auth from '../modules/Auth';
-//import Dashboard from '../components/Dashboard.jsx';
 import GameBoard from '../components/GameBoard.jsx';
 
 
 class DashboardPage extends React.Component {
-
-  /**
-   * Class constructor.
-   */
   constructor(props) {
     super(props);
 
     this.state = {
-      secretData: ''
+      games: "Breath of the Wild"
     };
   }
 
@@ -41,9 +36,30 @@ class DashboardPage extends React.Component {
    * Render the component.
    */
   render() {
-    //This is the original
-    //return (<Dashboard secretData={this.state.secretData} />);
-    return (<GameBoard />);
+    return (
+      <div>
+        <form onSubmit={this.onSubmit}>
+          <div className="form-group">
+            <label htmlFor="formGroupGames">Games</label>
+             <input type="text" className="form-control" id="formGroupGames" ref="game" placeholder="Input Game" />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="formGroupTime">Time Played</label>
+            <input type="text" className="form-control" id="formGroupTime" ref="time" placeholder="Input Time" />
+          </div>
+
+          <button className="btn btn-primary">Submit</button>
+        </form>
+
+        <GameBoard games={this.state.games} />
+      </div>
+    );
+  }
+
+  onSubmit(e) {
+    e.preventDefault();
+    this.setState({games: this.refs.game.value, time: this.refs.time.value})
   }
 
 }
