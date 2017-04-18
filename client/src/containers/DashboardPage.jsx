@@ -38,7 +38,7 @@ class DashboardPage extends React.Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.onSubmit}>
+        <form onSubmit={this.onSubmit} className="input-group">
           <div className="form-group">
             <label htmlFor="formGroupGames">Games</label>
              <input type="text" className="form-control" id="formGroupGames" ref="game" placeholder="Input Game" />
