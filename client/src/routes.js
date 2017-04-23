@@ -2,6 +2,7 @@ import Base from './components/Base.jsx';
 import HomePage from './components/HomePage.jsx';
 import AddGames from './components/AddGames.jsx';
 import Chat from './components/Chat.jsx';
+import Walkthrough from './components/Walkthrough.jsx';
 import DashboardPage from './containers/DashboardPage.jsx';
 import LoginPage from './containers/LoginPage.jsx';
 import SignUpPage from './containers/SignUpPage.jsx';
@@ -27,6 +28,11 @@ const routes = {
     {
       path: '/addgames',
       component: AddGames
+    },
+
+    {
+      path: '/walkthrough',
+      component: Walkthrough
     },
 
     {
