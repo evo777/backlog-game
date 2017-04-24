@@ -1,9 +1,13 @@
 import React from 'react';
 
+import SearchBar from './SearchBar.jsx';
+
 class Walkthrough extends React.Component {
   render() {
     return (
-      <div>Walkthrough Room</div>
+      <div>
+        <SearchBar />
+      </div>
     );
   }
 }
