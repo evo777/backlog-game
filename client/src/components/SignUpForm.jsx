@@ -51,7 +51,7 @@ const SignUpForm = ({
       <div className="field-line">
         <TextField
           floatingLabelText="Confirm Password"
-          type="password2"
+          type="password"
           name="password2"
           onChange={onChange}
           errorText={errors.password2}
