@@ -1,4 +1,0 @@
-{
-  "dbUri": "mongodb://localhost/backlog_games",
-  "jwtSecret": "a secret phrase!!"
-}
